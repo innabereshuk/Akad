@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:400,400i,800&display=swap');
+
+@import 'bootstrap/bootstrap';
+// @import 'variables';
+// @import 'mixins';
+// @import 'socials';
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    font-size: 14px;
+}
+
+body {
+    min-height: 100%;
+}
+
+.marked {
+    position: relative;
+    display: inline-block;
+    &:before {
+        content: '';
+        display: inline-block;
+        width: 70px;
+        height: 20px;
+        background-color: $primary;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        z-index: -1;
+    }
+}
+
+.benefit-icon {
+    background-color: $primary;
+    font-size: 2.15rem;
+    color: $white;
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    margin-right: $spacer *.75;
+    line-height: 40px;
+    & + span {
+        vertical-align: middle; 
+    }
+}
+
+.person {
+    padding-top: 140%;
+    position: relative;
+    overflow: hidden;
+    img {
+        min-width: 100%;
+        min-height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
