@@ -19,6 +19,48 @@ body {
     min-height: 100%;
 }
 
+.cover{
+    position: relative;
+    background-image: linear-gradient(to top, rgba(251, 251, 251, 0.9), rgba(251, 251, 251, 0.7)), url(../img/bg_homepage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    // &::before {
+    //     content: '';
+    //     position: absolute;
+    //     top: 0;
+    //     right: 0;
+    //     left: 0;
+    //     bottom: 0;
+    //     background-image: linear-gradient(to top, rgba(251, 251, 251, 0.7), rgba(251, 251, 251, 0.6));
+    //    z-index: 1;
+    // }
+    .container {
+        margin: 0 auto;
+        padding-bottom: 25%;
+        padding-top: 15%;
+    .row .col-md-6 {
+        z-index: 500;
+    }
+   }
+    h1 {
+        border: 10px solid $secondary;
+    }
+    h4 {
+       z-index: 2;
+    }
+    
+}
+
+.margin {
+    margin-top: -23%;
+    z-index: 520;
+    h2 {
+        z-index: 2;
+    }
+}
+
 .marked {
     position: relative;
     display: inline-block;
@@ -64,5 +106,89 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
     }
+}
+
+.image {
+    position: relative;
+    padding-top: 100%;
+    overflow: hidden;
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+    }
+}
+
+
+.btn {
+    width: 170px;
+    height: 50px;
+    right: 0;
+    color: $white;
+    margin-left: 68%;
+    border-radius: 0;
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: transparent;
+        border-radius: 2px solid $primary;
+        color: $primary;
+    }
+}
+
+.home-icon {
+    width: 40px;
+    height: 30px;
+    font-size: 2.15rem;
+}
+
+.list{
+    list-style: none;
+    padding: 0;
+    font-family: $font-family-sans-serif;
+}
+
+.menu {
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    margin: 45px 0;
+    font-family: $headings-font-family;
+    li {
+        margin: 8px 0;
+        a {
+        color: $secondary;
+        text-decoration: none;
+        padding: 5px 15px;
+        &:hover,
+        &:focus,
+        &:active {
+            background: $primary;
+            transition: all .3s ease-in-out;
+            color: $white;
+        }
+      }
+   }
+}
+
+// .no-gutters {
+//     @include row-cols(3);
+// }
+
+.picture {
+    padding: 0;
+    // position: relative;
+    // width: 100%;
+    // height: 100%;
+    // img {
+    //     position: absolute;
+    //     top: 50%;
+    //     left: 50%;
+    //     transform: translate(-50%, -50%);
+    //     object-fit: cover;
+    // }
 }
 
